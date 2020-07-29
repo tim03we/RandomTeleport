@@ -1,0 +1,7 @@
+---
+# In which plus and minus range of coordinates to search to find a random position
+radius: 50000
+
+# Enable or disable the message when a random position is found
+position.found.message: true
+...
