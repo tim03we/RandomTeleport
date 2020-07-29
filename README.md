@@ -1,6 +1,6 @@
 # RandomTeleport
 
-With the plugin CameraStudio you can make a camera movement, for example to record a live event.  It's also good for map presentations, if you want to show the map. 
+With the plugin RandomTeleport you can teleport to random positions in the world.
 
 # Command
 Command | Permission | Alias
