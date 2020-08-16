@@ -44,10 +44,14 @@ public class RandomTeleport extends PluginBase {
 
     }
 
+    private static int genRandomPN(int val) {
+        int ii = -val + (int) (Math.random() * ((val - (-val)) + 1));
+        return ii;
+    }
+
     private static Position randomPos(Position base) {
-        Random random = new Random();
-        int x = random.nextInt(instance.getConfig().getInt("radius")) - instance.getConfig().getInt("radius");
-        int z = random.nextInt(instance.getConfig().getInt("radius")) - instance.getConfig().getInt("radius");
+        int x = genRandomPN(instance.getConfig().getInt("radius"));
+        int z = genRandomPN(instance.getConfig().getInt("radius"));
 
         base.setComponents(x, 67, z);
 
