@@ -2,5 +2,9 @@ name: RandomTeleport
 main: tim03we.randomteleport.RandomTeleport
 api: 1.0.9
 author: tim03we
-version: 1.1.0
+version: 1.1.1
 description: A Cloudburst Plugin
+permissions:
+  randomteleport.use:
+    default: op
+    description: RandomTeleport Command

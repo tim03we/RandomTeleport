@@ -34,8 +34,9 @@ public class RandomTeleportCommand extends Command {
 
     @Override
     public boolean execute(CommandSender sender, String s, String[] args) {
-        if(!testPermission(sender)) {
-            return false;
+        if(!sender.hasPermission(getPermission())) {
+            sender.sendMessage(Language.translate(true, "no.permission"));
+            return true;
         }
         if(sender instanceof Player) {
             Player player = (Player) sender;

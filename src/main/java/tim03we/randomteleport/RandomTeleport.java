@@ -22,7 +22,6 @@ import cn.nukkit.level.Position;
 import cn.nukkit.plugin.PluginBase;
 import tim03we.randomteleport.commands.RandomTeleportCommand;
 
-import java.util.Random;
 import java.util.concurrent.CompletableFuture;
 import java.util.function.Consumer;
 
@@ -69,7 +68,7 @@ public class RandomTeleport extends PluginBase {
             Block head = base.getLevel().getBlock(base.setComponents(x, i + 2, z));
             if (head.getId() == 0 && body.getId() == 0) {
                 if(ground.getId() != Block.LAVA || ground.getId() != Block.STILL_LAVA && ground.isSolid()) {
-                    return base.setComponents(x, i + 1, z);
+                    return base.setComponents(x + 0.5, i + 1, z + 0.5);
                 }
             }
         }
